@@ -28,9 +28,13 @@ header {
   max-height: 35px;
 }
 
+.link-gerados p {
+  font-weight: 400;
+  font-size: 0.8rem
+}
+
 .flecha {
   color: var(--font-color);
-  padding: 0 40px
 }
 
 h1 {
