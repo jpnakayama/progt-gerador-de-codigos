@@ -32,65 +32,61 @@
     </div>
     <section class="novos-campos">
       <div class="categoria">
-        <h3>CATEGORIA 1</h3>
-        <div class="botoes">
-          <button class="btn">Tipo 1</button>
-          <button class="btn">Tipo 2</button>
-          <button class="btn">Tipo 3</button>
-          <button class="btn">Tipo 4</button>
-        </div>
-      </div>
-      <div class="categoria">
-        <h3>CATEGORIA 2</h3>
-        <select name="categoria2" id="categoria2" class="select-geral">
+        <h3>Código do Equipamento</h3>
+        <select name="equipamento" id="categoria-equipamento" class="select-geral select-equipamento">
           <option value="">Selecione o tipo</option>
-          <option value="1">Tipo 1</option>
-          <option value="1">Tipo 1</option>
-          <option value="2">Tipo 2</option>
-          <option value="3">Tipo 3</option>
-          <option value="4">Tipo 4</option>
-          <option value="5">Tipo 5</option>
-          <option value="6">Tipo 6</option>
-          <option value="7">Tipo 7</option>
+          <option value="FTB">Filtro de tambor rotativo (Belt)</option>
+          <option value="FTP">Filtro de tambor rotativo (Pré camada)</option>
+          <option value="FTR">Filtro de tambor rotativo (Raspador)</option>
+          <option value="FTS">Filtro de tambor rotativo (Sopro)</option>
+          <option value="ESC">Espessador (Coluna central)</option>
+          <option value="ESD">Espessador (Deep cone)</option>
+          <option value="ESP">Espessador (Ponte)</option>
+          <option value="EST">Espessador (Tração periférica)</option>
+          <option value="LAV">Lavador de celulose</option>
+          <option value="FHE">Filtro horizontal</option>
+          <option value="PRD">Prensa desaguadora</option>
         </select>
       </div>
       <div class="categoria">
-        <h3>CATEGORIA 3</h3>
-        <div class="botoes">
-          <button class="btn">Tipo 1</button>
-          <button class="btn">Tipo 2</button>
-          <button class="btn">Tipo 3</button>
-          <button class="btn">Tipo 4</button>
+        <h3>Dimensões do Equipamento</h3>
+        <div class="dimensoes-itens">
+          <input type="text" name="dimensao" id="input-dimensao" class="input-geral input-dimensao">
+          <button class="btn btnDimensao" id="m">m</button></li>
+          <button class="btn btnDimensao" id="m²">m²</button></li>          
         </div>
       </div>
-      </div>
       <div class="categoria">
-        <h3>CATEGORIA 4</h3>
-        <select name="categoria2" id="categoria2" class="select-geral">
-          <option value="">Selecione o tipo</option>
-          <option value="1">Tipo 1</option>
-          <option value="1">Tipo 1</option>
-          <option value="2">Tipo 2</option>
-          <option value="3">Tipo 3</option>
-          <option value="4">Tipo 4</option>
-          <option value="5">Tipo 5</option>
-          <option value="6">Tipo 6</option>
-          <option value="7">Tipo 7</option>
-        </select>
+        <h3>Novo ou Retrofit</h3>
+        <ul class="botoes">
+          <li><button class="btn btncat3" id="N">Novo</button></li>
+          <li><button class="btn btncat3" id="R">Retrofit</button></li>
+        </ul>
+      </div>
       </div>
     </section>
-    <div class="novo">
+    <div class="novo" id="codigo-novo">
       <h2>CÓDIGO NOVO</h2>
-      <p class="codigo-gerado">ABC-1234-ABC-1234</p>
+      <div class="codigo-temporario">
+        <div id="categoria-um" class="item-codigo-temporario"></div>
+        <div id="categoria-dois" class="item-codigo-temporario"></div>
+        <div id="categoria-dois-unidade-de-medida" class="item-codigo-temporario"></div>
+        <div id="categoria-tres" class="item-codigo-temporario"></div>
+        <div id="categoria-quatro" class="item-codigo-temporario"></div>
+      </div>
+      <!-- <p class="codigo-gerado">ABC-123-CDE-456</p> -->
       <div>
+        <button class="btn btn-codigo-novo"><i class="fa-solid fa-floppy-disk"></i></button>
         <button class="btn btn-codigo-novo"><i class="fa-solid fa-copy"></i></button>
         <button class="btn btn-codigo-novo"><i class="fa-solid fa-share"></i></button>
-      </div>
+      </div>    
     </div>
   </main>
 
   <footer>
     <p>2022 | Desenvolvido por JP Nakayama</p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>

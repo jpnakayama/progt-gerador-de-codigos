@@ -22,10 +22,11 @@ header {
 
   display: flex;
   justify-content: space-between;
+  align-items: center
 }
 
 .logo {
-  max-height: 35px;
+  max-height: 55px;
 }
 
 .link-gerados p {
@@ -81,7 +82,9 @@ h3 {
   padding: 8px 12px;
 
   border: none;
-  border-radius: 5px
+  border-radius: 5px;
+
+  cursor: pointer
 }
 
 .novos-campos {
@@ -103,19 +106,36 @@ h3 {
   gap: 20px;
 }
 
+.dimensoes-itens {
+  display: flex;
+  justify-content: center;
+
+  gap: 10px
+}
+
+.input-dimensao {
+  width: 20%
+}
+
 .select-geral {
   padding: 8px;
   border-radius: 5px;
 }
 
 .codigo-gerado {
-  border: 2px solid var(--btn-font);
+  border: none;
   padding: 0.8rem;
   margin-bottom: 1rem;
   
   display: inline-block;
   
   font-size: 2rem;
+}
+
+.codigo-temporario {
+  display: flex;
+
+  justify-content: center
 }
 
 .btn-codigo-novo {
