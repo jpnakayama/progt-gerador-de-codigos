@@ -14,8 +14,10 @@
   <title>Gerador de códigos
   </title>
 </head>
+
 <body>
   <header>
+
     <a href="#"><img src="./assets/img/logo-linha-fina.png" alt="logo PROGT" class="logo"></a>
     <h1> Gerador de códigos</h1>
     <div class="link-gerados">
@@ -27,8 +29,8 @@
   <main>
     <div class="antigo">
       <h2>CÓDIGO ANTIGO</h2>
-      <input type="text" class="input-geral" placeholder="Digite o código antigo">
-      <button class="btn"><i class="fa-solid fa-plus"></i></button>
+      <input type="text" class="input-geral" placeholder="Digite o código antigo" id="input-sequencial">
+      <button class="btn" id="btn-sequencial" onclick="adicionaSequencial()"><i class="fa-solid fa-plus"></i></button>
     </div>
     <section class="novos-campos">
       <div class="categoria">
@@ -64,22 +66,61 @@
         </ul>
       </div>
       </div>
+      <div class="categoria">
+        <h3>Material principal do equipamento</h3>
+        <ul class="botoes">
+          <li><button class="btn btncat4" id="AC">AC</button></li>
+          <li><button class="btn btncat4" id="AI">AI</button></li>
+        </ul>
+      </div>
+      </div>
+      <div class="categoria">
+        <h3>Especificação do documento</h3>
+        <ul class="botoes">
+          <li><button class="btn btncat5" id="CJ">CJ</button></li>
+          <li><button class="btn btncat5" id="GE">GE</button></li>
+          <li><button class="btn btncat5" id="SCJ">SCJ</button></li>
+        </ul>
+      </div>
+      <div class="categoria">
+        <h3>Tipo de documento</h3>
+        <ul class="botoes">
+          <li><button class="btn btncat6" id="DE">DE</button></li>
+          <li><button class="btn btncat6" id="ET">ET</button></li>
+          <li><button class="btn btncat6" id="FL">FL</button></li>
+        </ul>
+      </div>
+      <div class="categoria">
+        <h3>Tamanho do formato do documento</h3>
+        <ul class="botoes">
+          <li><button class="btn btncat7" id="01">01</button></li>
+          <li><button class="btn btncat7" id="02">02</button></li>
+          <li><button class="btn btncat7" id="03">03</button></li>
+          <li><button class="btn btncat7" id="04">04</button></li>
+        </ul>
+      </div>
+      </div>
     </section>
     <div class="novo" id="codigo-novo">
-      <h2>CÓDIGO NOVO</h2>
+      <h2>PRÉVIA DO CÓDIGO</h2>
       <div class="codigo-temporario">
         <div id="categoria-um" class="item-codigo-temporario"></div>
         <div id="categoria-dois" class="item-codigo-temporario"></div>
         <div id="categoria-dois-unidade-de-medida" class="item-codigo-temporario"></div>
         <div id="categoria-tres" class="item-codigo-temporario"></div>
         <div id="categoria-quatro" class="item-codigo-temporario"></div>
+        <div id="categoria-cinco" class="item-codigo-temporario"></div>
+        <div id="categoria-seis" class="item-codigo-temporario"></div>
+        <div id="categoria-sete" class="item-codigo-temporario"></div>
+        <div id="categoria-oito" class="item-codigo-temporario"></div>
+        <div id="categoria-nove" class="item-codigo-temporario"></div>
       </div>
-      <!-- <p class="codigo-gerado">ABC-123-CDE-456</p> -->
+<!--       <p class="codigo-gerado">ABC-123-CDE-456</p>
       <div>
         <button class="btn btn-codigo-novo"><i class="fa-solid fa-floppy-disk"></i></button>
         <button class="btn btn-codigo-novo"><i class="fa-solid fa-copy"></i></button>
         <button class="btn btn-codigo-novo"><i class="fa-solid fa-share"></i></button>
-      </div>    
+      </div>   -->  
     </div>
   </main>
 
@@ -87,6 +128,10 @@
     <p>2022 | Desenvolvido por JP Nakayama</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="./app/"></script>
+  <script src="./app/adicionaPorBotoes.js"></script>
+  <script src="./app/adicionaPorSelect.js"></script>
+  <script src="./app/adicionaPorInput.js"></script>
+
 </body>
 </html>
